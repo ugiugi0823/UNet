@@ -49,7 +49,7 @@ class CellDataset(Dataset):
             out_size (int): output size of segmentation map
         """
         self.root_dir = os.getcwd() if not root_dir else root_dir
-        path = os.path.join(self.root_dir, '../../data/VNC')
+        path = os.path.join(self.root_dir, '/content/UNet/data/VNC')
         self.train_path = os.path.join(path, 'train-volume.tif')
         self.mask_path = os.path.join(path, 'train-labels.tif')
         self.test_path = os.path.join(path, 'test-volume.tif')
